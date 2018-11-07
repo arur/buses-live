@@ -1,6 +1,6 @@
 # Buses live
 
-Displays a map of Vancouver, BC with buses location. Data is fetched from Translink Open API.
+Displays a map of Vancouver, BC with buses location. Data is fetched from Translink Open API. A demo can be seen [buses-live.herokuapp.com](https://buses-live.herokuapp.com/).
 
 ## Getting Started
 
