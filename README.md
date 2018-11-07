@@ -31,12 +31,11 @@ touch .env && touch client/.env
 ```
 In .env file add:
 ```
-REACT_APP_MAPBOX_ACCESS_TOKEN=your.mapbox.key.here
-TRANSLINK_KEY=your.translink.key.here
+TRANSLINK_KEY=your.translink.key
 ```
 In client/.env file add:
 ```
-REACT_APP_MAPBOX_ACCESS_TOKEN=your.mapbox.key.here
+REACT_APP_MAPBOX_ACCESS_TOKEN=your.mapbox.key
 ```
 
 To run develoment server
@@ -53,6 +52,12 @@ NODE_ENV=production node server.js
 ## Deployment
 
 Application is configured for easy deployment to Heroku.
+
+```
+heroku create
+git push heroku master
+heroku config:set TRANSLINK_KEY=your.translink.key
+```
 
 ## Built With
 
