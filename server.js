@@ -1,6 +1,6 @@
 "use strict";
 const express = require("express");
-const http = require("http");
+const https = require("https");
 const path = require('path');
 const util = require("util");
 const debug = util.debuglog("server");
@@ -20,7 +20,7 @@ const API_OPTIONS = {
 
 app.get("/api/buses", (request, response) => {
   let data = "";
-  const req = http.request(API_OPTIONS, res => {
+  const req = https.request(API_OPTIONS, res => {
     res.setEncoding("utf8");
     res.on("data", chunk => {
       data += chunk;
